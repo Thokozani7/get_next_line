@@ -6,7 +6,7 @@
 /*   By: txaba <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/17 12:37:22 by txaba             #+#    #+#             */
-/*   Updated: 2019/07/02 11:02:44 by txaba            ###   ########.fr       */
+/*   Updated: 2019/07/02 13:37:32 by txaba            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,8 @@ int			new_line(char **str, char **line, int fd, int val)
 	{
 		if (val == BUFF_SIZE)
 			return (get_next_line(fd, line));
-		*line = ft_strdup(str[fd] + 1);
+		*line = ft_strdup(str[fd]);
 		ft_strdel(&str[fd]);
-		free(str[fd]);
 	}
 	return (1);
 }
