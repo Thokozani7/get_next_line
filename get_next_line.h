@@ -6,7 +6,7 @@
 /*   By: txaba <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 08:10:54 by txaba             #+#    #+#             */
-/*   Updated: 2019/06/19 08:21:44 by txaba            ###   ########.fr       */
+/*   Updated: 2019/07/02 13:13:21 by txaba            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <sys/types.h>
 # include <sys/uio.h>
 # include <unistd.h>
+# include "libft.h"
 # include <fcntl.h>
 
 int get_next_line(const int fd, char **line);
